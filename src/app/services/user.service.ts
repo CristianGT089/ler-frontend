@@ -8,7 +8,7 @@ import { User } from '../interface/user';
 })
 export class UserService {
   private http = inject(HttpClient);
-  private apiUrl = 'http://56.124.112.59:3000/api/data/';
+  private apiUrl = '/api/data/';
 
   // Método para obtener los datos
   getAllUsers(): Observable<User[]> {
