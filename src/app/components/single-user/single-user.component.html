@@ -1,22 +1,31 @@
-<p-fieldset legend="Buscar por ID">
-  <div class="caja">
-    <label for="userId">Ingrese ID del usuario:</label>
-    <div class="texto-caja">
-      <input id="userId" type="number" [(ngModel)]="userId" placeholder="Ej: 123" />
-      <button pButton aria-label="Buscar" (click)="fetchUserById()" class="mt-2">Buscar</button>
+<div class="usuario-uno">
+  <h1>Conseguir la info de un usuario</h1>
+  <div class="caja-busqueda">
+    <p-fieldset legend="Buscar por ID">
+      <div class="caja">
+        <div class="busqueda">
+          <label for="userId"><h2>Ingrese ID del usuario:</h2></label>
+          <div class="texto-caja">
+            <input id="userId" type="number" [(ngModel)]="userId" placeholder="Ej: 123" />
+            <button pButton aria-label="Buscar" (click)="fetchUserById()" class="mt-2">Buscar</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p-divider />
+      </div>
+      <div *ngIf="selectedUser" class="resultado">
+        <h3>Usuario encontrado:</h3>
+        <h4><strong>ID:</strong> {{ selectedUser.id }}</h4>
+        <h4><strong>Nombre:</strong> {{ selectedUser.nombre }}</h4>
+        <h4><strong>Correo:</strong> {{ selectedUser.correo }}</h4>
+        <h4><strong>Edad:</strong> {{ selectedUser.edad }}</h4>
+      </div>
+    </p-fieldset>
+
+
+    <div *ngIf="errorMessage" class="mt-3">
+      <p class="text-danger">{{ errorMessage }}</p>
     </div>
   </div>
-  <div *ngIf="selectedUser" class="mt-3">
-    <p-divider />
-    <h3>Usuario encontrado:</h3>
-    <p><strong>ID:</strong> {{ selectedUser.id }}</p>
-    <p><strong>Nombre:</strong> {{ selectedUser.nombre }}</p>
-    <p><strong>Correo:</strong> {{ selectedUser.correo }}</p>
-    <p><strong>Edad:</strong> {{ selectedUser.edad }}</p>
-  </div>
-</p-fieldset>
-
-
-<div *ngIf="errorMessage" class="mt-3">
-  <p class="text-danger">{{ errorMessage }}</p>
 </div>

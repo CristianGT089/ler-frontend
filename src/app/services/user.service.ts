@@ -14,12 +14,12 @@ export class UserService {
   getAllUsers(): Observable<User[]> {
     return this.http
       .get<User[]>(this.apiUrl)
-      .pipe(delay(2000));
+      .pipe(delay(100));
   }
 
   getUserById(id: number): Observable<User> {
     return this.http
       .get<User>(this.apiUrl+id)
-      .pipe(delay(2000))
+      .pipe(delay(100))
   }
 }
