@@ -1,59 +1,51 @@
-# Frontend
+# Proyecto: Microservicio Node.js + PostgreSQL + Frontend Angular - PARTE DEL FRONTEND
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
+Este proyecto es una aplicación web que consiste en un backend desarrollado con Node.js y Express, conectado a una base de datos PostgreSQL, y un frontend desarrollado con Angular.
 
-## Development server
+---
 
-To start a local development server, run:
+## **Requisitos previos**
+1. **Angular CLI** (v16 o superior).
 
+## **Pasos para ejecutar el frontend localmente**
+
+### **Frontend (Angular)**
+
+#### Clonar el repositorio:
+```bash
+git clone git@github.com:CristianGT089/ler-frontend.git
+cd backend
+```
+
+#### Navegar al directorio del frontend:
+```bash
+cd frontend
+```
+
+#### Instalar dependencias:
+```bash
+npm install
+```
+
+#### Iniciar la aplicación Angular:
 ```bash
 ng serve
 ```
+El frontend estará disponible en: `http://localhost:4200`.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## **Notas**
+- Verifica que los puertos configurados no estén ocupados.
+- Si necesitas ayuda adicional, consulta la documentación de [Angular](https://angular.io).
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## **Datos de Contacto**
 
-```bash
-ng generate component component-name
-```
+Si tienes alguna pregunta o necesitas asistencia adicional, no dudes en contactarme.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **Nombre**: [Cristian Stiven Guzman Tovar]
+- **Correo electrónico**: [cristiansgt089@gmail.com]
+- **GitHub**: [https://github.com/CristianGT089](https://github.com/CristianGT089)
+- **LinkedIn**: [https://www.linkedin.com/in/cristian-stiven-guzman-tovar-668655217/](https://www.linkedin.com/in/cristian-stiven-guzman-tovar-668655217/)
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+¡Estoy disponible para cualquier consulta relacionada con el proyecto o cualquier otra ayuda que necesites!
