@@ -1,0 +1,10 @@
+
+.caja {
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-caja {
+  display: flex;
+  gap: 10px;
+}

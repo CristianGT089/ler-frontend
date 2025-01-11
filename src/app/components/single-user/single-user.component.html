@@ -1,0 +1,22 @@
+<p-fieldset legend="Buscar por ID">
+  <div class="caja">
+    <label for="userId">Ingrese ID del usuario:</label>
+    <div class="texto-caja">
+      <input id="userId" type="number" [(ngModel)]="userId" placeholder="Ej: 123" />
+      <button pButton aria-label="Buscar" (click)="fetchUserById()" class="mt-2">Buscar</button>
+    </div>
+  </div>
+  <div *ngIf="selectedUser" class="mt-3">
+    <p-divider />
+    <h3>Usuario encontrado:</h3>
+    <p><strong>ID:</strong> {{ selectedUser.id }}</p>
+    <p><strong>Nombre:</strong> {{ selectedUser.nombre }}</p>
+    <p><strong>Correo:</strong> {{ selectedUser.correo }}</p>
+    <p><strong>Edad:</strong> {{ selectedUser.edad }}</p>
+  </div>
+</p-fieldset>
+
+
+<div *ngIf="errorMessage" class="mt-3">
+  <p class="text-danger">{{ errorMessage }}</p>
+</div>
